@@ -1,0 +1,142 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrazyCodetech</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+    <link rel="stylesheet" href="{% static 'media_queries.css' %}">
+</head>
+<body>
+    
+    <!-- top banner -->
+
+    <div class="top-banner">
+        <div class="container">
+            <div class="small-bold-text banner-text">🥳 Unlock Your Potential with Crazy Code Tech</div>
+        </div>
+    </div>
+
+    <!-- nav bar -->
+    <nav>
+        <div class="container main-nav flex">
+            <a href="#" class="company-logo">
+                <img src="{% static 'CRAZYCODETECH.png' %}" alt="company logo">
+            </a>
+            <div class="nav-links" id="nav-links">
+                <ul class="flex">
+                    <li><a href="#" class="hover-link">Home</a></li>
+                    <li><a href="#" class="hover-link">Jobs&Internship</a></li>
+                    <li><a href="#" class="hover-link">Guidance</a></li>
+                    <li><a href="#" class="hover-link">About us</a></li>
+                    <li><a href="#" class="hover-link secondary-button">Sign in</a></li>
+                    <li><a href="#" class="hover-link primary-button">Sign up</a></li>
+                </ul>
+            </div>
+            <a href="#" class="nav-toggle hover-link" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- header section -->
+    <header>
+        <div class="container header-section flex">
+            <div class="header-left">
+                <h1>Let's Think, Build & Achieve</h1>
+                <p>Crazy Code Tech is a vibrant tech community dedicated to fostering innovation, collaboration, and learning among coders and tech enthusiasts. We empower individuals to create, build, and excel through events, knowledge-sharing initiatives.</p>
+                <a href="#" class="primary-button get-started-btn">Get Started</a>
+            </div>
+            <div class="header-right">
+                <img src="{% static 'asset_2.png' %}" alt="hero image">
+            </div>
+        </div>
+    </header>
+
+    <!-- features section -->
+
+    <section class="features-section">
+        <div class="container">
+            <div class="features-header">
+                <h2 class="features-heading-text">Features</h2>
+            </div>
+            <div class="features-area flex">
+                <div class="features-card flex">
+                    <img src="{% static 'asset_11.svg' %}" alt="">
+                    <h3>CGPA Calculator</h3>
+                    <p>User-friendly CGPA calculation tool for students.</p>
+                    <a href="#" class="secondary-button">Open <i class="fa-solid fa-right-long"></i></a>
+                </div>
+                <div class="features-card flex">
+                    <img src="{% static 'asset_15.svg' %}" alt="">
+                    <h3>Hackathon Guide</h3>
+                    <p>Comprehensive guide for hackathon success: tips, strategies, and resources.</p>
+                    <a href="#" class="secondary-button">Explore <i class="fa-solid fa-right-long"></i></a>
+                </div>
+                <div class="features-card flex">
+                    <img src="{% static 'asset_17.svg' %}" alt="">
+                    <h3>Quiz</h3>
+                    <p>Interactive quiz platform for learning, testing knowledge, and having fun.</p>
+                    <a href="#" class="secondary-button">Open <i class="fa-solid fa-right-long"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- big features section -->
+
+    <section class="big-feature-section">
+        <div class="big-features-header">
+            <h2 class="big-features-heading-text">Job and Internship Update</h2>
+        </div>
+        <div class="container flex big-feature-container">
+            <div class="feature-img">
+                <img src="{% static 'internship.jpeg' %}" alt="">
+            </div>
+            <div class="feature-desc flex">
+                <h3>Internship Opportunity</h3>
+                <p>Valuable internship opportunity for skill enhancement, professional growth, industry experience, networking, and real-time updates.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="big-feature-jobsection">
+        <div class="container flex big-feature-container">
+            <div class="feature-img">
+                <img src="{% static 'job.jpeg' %}" alt="">
+            </div>
+            <div class="feature-desc flex new">
+                <h3>Job Opportunity</h3>
+                <p>Exciting job opportunity awaits! Unlock growth, skill-building, and receive real-time updates on openings.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <!-- subfooter -->
+
+    <div class="subfooter">
+        <div class="container flex subfooter-container">
+            <a class="hover-link" href="#">Privacy policy</a>
+            <a class="hover-link" href="#">Terms & Condition</a>
+            <p class="right">2024 © CrazyCodetech Reserved Rights</p>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/c1fc3d2826.js" crossorigin="anonymous"></script>
+
+    <script>
+        const toggleButton = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        toggleButton.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        })
+
+    </script>
+
+</body>
+</html>
